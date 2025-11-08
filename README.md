@@ -3,6 +3,7 @@ Project Based Learing 1
 # Contoh Program Shell Script
 
 Berikut contoh script bash untuk menampilkan pesan:
+![Deskripsi gambar](https://ibb.co.com/hFpFXVY2)
 
 ```
 #!/bin/bash
