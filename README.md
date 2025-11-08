@@ -1,8 +1,9 @@
 # PROJECT-OS-RAHMAT
 Project Based Learing 1
-sdfjdfjpf\\\\\
-sffsdffdas
-adffadfad
-afdfafadf
-afdfdfads
-adfadfadfadf
+# Contoh Program Shell Script
+
+Berikut contoh script bash untuk menampilkan pesan:
+
+```bash
+#!/bin/bash
+echo "Halo Dunia!"
