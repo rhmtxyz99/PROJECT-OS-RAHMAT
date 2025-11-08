@@ -45,7 +45,7 @@ echo "Log sistem contoh" > file20.log
 ## LANGKAH 2 SCRIPT ORGANISASI FILE
 ### TULIS SCRIPT MENGGUNAKAN find,mv, dan cp:
 [Deskripsi gambar]
-(https://drive.google.com/file/d/1e8502HLAlIuRY1bFXAUBiOJfb7X9XUpK/view?usp=sharing)
+(https://drive.google.com/file/d/11KP1W8-jfZsyK_wDd6aTQVj5xc_NzJAD/view?usp=sharing)
 
 ```
  echo "Ini adalah dokumen contoh" > file1.txt
