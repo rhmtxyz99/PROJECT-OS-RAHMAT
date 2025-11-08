@@ -1,6 +1,6 @@
 # PROJECT-OS-RAHMAT
 Project Based Learing 1
-## LANGKAH 1
+## LANGKAH 1 BUAT STRUKTUR DIREKTORI
 ### Berikut contoh Membuat Direkoti Project_File_Management:
 [Deskripsi gambar]
 (https://drive.google.com/file/d/1VrifpuUz2Jp4Wfr1SlaVp5pgvdoRKswu/view?usp=sharing)
@@ -21,14 +21,14 @@ cd Project_File_Management
 mkdir document images archives logs
 ```
 
-Berikut contoh perintah membuat 20 file sample:
+### Berikut contoh perintah membuat 20 file sample:
 [Deskripsi gambar]
 (https://drive.google.com/file/d/1Im_pQbvOmzU6o5ygdg1JaB2ZJ_dgs_gs/view?usp=sharing)
 
 ```
 touch file{1..10}.txt file{11..15}.jpg file{16..18}.pdf file{19..20}.log
 ```
-Berikut contoh perintah memasukan sebuah teks ke masing masing file yang berbeda:
+### Berikut contoh perintah memasukan sebuah teks ke masing masing file yang berbeda:
 [Deskripsi gambar]
 (https://drive.google.com/file/d/1Vc3sH__-GRKcUa8B3GqEuPG0NFIvnEoQ/view?usp=sharing)
 
@@ -42,3 +42,11 @@ Berikut contoh perintah memasukan sebuah teks ke masing masing file yang berbeda
 echo "Log sistem contoh" > file20.log
 ```
 
+## LANGKAH 2 SCRIPT ORGANISASI FILE
+### TULIS SCRIPT MENGGUNAKAN find,mv, dan cp:
+[Deskripsi gambar]
+(https://drive.google.com/file/d/1e8502HLAlIuRY1bFXAUBiOJfb7X9XUpK/view?usp=sharing)
+
+```
+ echo "Ini adalah dokumen contoh" > file1.txt
+```
