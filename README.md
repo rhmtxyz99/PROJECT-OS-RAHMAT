@@ -13,8 +13,21 @@ Berikut contoh script bash untuk menampilkan pesan:
 ```
 Berikut contoh script bash untuk menampilkan pesan:
 ![Deskripsi gambar]
-(https://drive.google.com/file/d/1Im_pQbvOmzU6o5ygdg1JaB2ZJ_dgs_gs/view?usp=sharing))
+(https://drive.google.com/file/d/1Im_pQbvOmzU6o5ygdg1JaB2ZJ_dgs_gs/view?usp=sharing)
 
 ```
 #ubuntu@rahmat-nusi:~ cd Project_File_Management
 #ubuntu@rahmat-nusi:~/Project_File_Management$ mkdir document images archives logs
+```
+
+Berikut contoh script bash untuk menampilkan pesan:
+![Deskripsi gambar]
+(https://drive.google.com/file/d/1Vc3sH__-GRKcUa8B3GqEuPG0NFIvnEoQ/view?usp=sharing)
+
+```
+#ubuntu@rahmat-nusi:~ cd Project_File_Management
+#ubuntu@rahmat-nusi:~/Project_File_Management$ mkdir document images archives logs
+
+```
+
+
