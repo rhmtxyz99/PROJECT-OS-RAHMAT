@@ -13,21 +13,33 @@ Berikut contoh script bash untuk menampilkan pesan:
 ```
 Berikut contoh script bash untuk menampilkan pesan:
 ![Deskripsi gambar]
+(https://drive.google.com/file/d/1DDWgvhBxUNTyGFEezjfUD7vHsP9RmIKo/view?usp=sharing)
+
+```
+cd Project_File_Management
+```
+```
+mkdir document images archives logs
+```
+
+Berikut contoh script bash untuk menampilkan pesan:
+![Deskripsi gambar]
 (https://drive.google.com/file/d/1Im_pQbvOmzU6o5ygdg1JaB2ZJ_dgs_gs/view?usp=sharing)
 
 ```
-#ubuntu@rahmat-nusi:~ cd Project_File_Management
-#ubuntu@rahmat-nusi:~/Project_File_Management$ mkdir document images archives logs
+touch file{1..10}.txt file{11..15}.jpg file{16..18}.pdf file{19..20}.log
 ```
-
 Berikut contoh script bash untuk menampilkan pesan:
 ![Deskripsi gambar]
 (https://drive.google.com/file/d/1Vc3sH__-GRKcUa8B3GqEuPG0NFIvnEoQ/view?usp=sharing)
 
 ```
-#ubuntu@rahmat-nusi:~ cd Project_File_Management
-#ubuntu@rahmat-nusi:~/Project_File_Management$ mkdir document images archives logs
-
+ echo "Ini adalah dokumen contoh" > file1.txt
 ```
-
+```
+ echo "Data gambar" > file11.jpg
+```
+```
+echo "Log sistem contoh" > file20.log
+```
 
