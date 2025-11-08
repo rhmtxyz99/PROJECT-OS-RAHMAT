@@ -43,7 +43,47 @@ echo "Log sistem contoh" > file20.log
 ```
 
 ## LANGKAH 2 SCRIPT ORGANISASI FILE
+### Buat Script Organisasi File di dalam direktori projek:
+```
+nano organisasi_file.sh
+```
+### ISI SCRIPT
+[Deskripsi gambar]
+
+(https://drive.google.com/file/d/1DwRIHzH-5jURXFBeDsO0hdLD_nOSd8ix/view?usp=sharing)
+
+```
+#!/bin/bash
+# Script untuk mengorganisasi file berdasarkan ekstensi
+
+# Pastikan berada di direktori proyek
+cd ~/project_file_management
+
+# Pindahkan file sesuai ekstensi
+find . -maxdepth 1 -type f -name "*.txt" -exec mv {} documents/ \;
+find . -maxdepth 1 -type f -name "*.jpg" -exec mv {} images/ \;
+find . -maxdepth 1 -type f -name "*.pdf" -exec mv {} archives/ \;
+find . -maxdepth 1 -type f -name "*.log" -exec mv {} logs/ \;
+
+# Konfirmasi hasil
+echo "File berhasil dipindahkan ke folder sesuai ekstensi!"
+ls documents images archives logs
+```
+### Beri Hak Eksekusi:
+```
+chmod +x organisasi_file.sh
+```
+### Eksekusi Script Yang Telah Dibuat:
+```
+./organisasi_file.sh
+```
+
 ### TULIS SCRIPT MENGGUNAKAN find,mv, dan cp:
+
+### Buat file Search_file.sh
+```
+nano search_file.sh
+```
 [Deskripsi gambar]
 (https://drive.google.com/file/d/11KP1W8-jfZsyK_wDd6aTQVj5xc_NzJAD/view?usp=sharing)
 
@@ -81,3 +121,8 @@ case $opsi in
     ;;
 esac
 ```
+### Beri Hak Eksekusi
+```
+chmod +x search_file.sh
+```
+### Eksekusi File Yang Telah Dibuat
