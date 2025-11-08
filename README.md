@@ -48,5 +48,36 @@ echo "Log sistem contoh" > file20.log
 (https://drive.google.com/file/d/11KP1W8-jfZsyK_wDd6aTQVj5xc_NzJAD/view?usp=sharing)
 
 ```
- echo "Ini adalah dokumen contoh" > file1.txt
+ #!/bin/bash
+# Script: search_files.sh
+# Fungsi: Mencari file berdasarkan nama, ukuran, atau konten
+
+cd ~/project_file_management
+
+echo "=== PENCARIAN FILE ==="
+echo "1. Cari berdasarkan nama"
+echo "2. Cari berdasarkan ukuran"
+echo "3. Cari berdasarkan isi konten"
+read -p "Pilih opsi (1/2/3): " opsi
+
+case $opsi in
+  1)
+    read -p "Masukkan nama atau pola file (contoh: *.txt): " nama
+    echo "Hasil pencarian:"
+    find . -type f -name "$nama"
+    ;;
+  2)
+    read -p "Masukkan batas ukuran (contoh: +1M untuk lebih dari 1MB, -500k untuk kurang dari 500KB): " ukuran
+    echo "Hasil pencarian:"
+    find . -type f -size "$ukuran"
+    ;;
+  3)
+    read -p "Masukkan kata kunci yang ingin dicari dalam file: " keyword
+    echo "Hasil pencarian:"
+    grep -r "$keyword" .
+    ;;
+  *)
+    echo "Opsi tidak valid."
+    ;;
+esac
 ```
