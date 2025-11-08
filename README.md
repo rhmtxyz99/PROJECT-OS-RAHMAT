@@ -3,7 +3,8 @@ Project Based Learing 1
 # Contoh Program Shell Script
 
 Berikut contoh script bash untuk menampilkan pesan:
-![Deskripsi gambar](https://drive.google.com/file/d/1VrifpuUz2Jp4Wfr1SlaVp5pgvdoRKswu/view?usp=sharing)
+![Deskripsi gambar]
+(https://drive.google.com/file/d/1VrifpuUz2Jp4Wfr1SlaVp5pgvdoRKswu/view?usp=sharing)
 
 ```
 #ubuntu@rahmat-nusi:~ mkdir Project_File_Management
