@@ -78,7 +78,8 @@ chmod +x organisasi_file.sh
 ./organisasi_file.sh
 ```
 
-### TULIS SCRIPT MENGGUNAKAN find,mv, dan cp:
+## LANGKAH 3 FUNGSI PENCARIAN 
+*Karena saya sudah punya script pencarian file yang bisa mencari berdasarkan nama, ukuran, dan isi konten. Jadi Saya Langsung Buat Fungsi pencariannya.*
 
 ### Buat file Search_file.sh
 ```
@@ -126,3 +127,14 @@ esac
 chmod +x search_file.sh
 ```
 ### Eksekusi File Yang Telah Dibuat
+```
+./search_file.sh
+```
+
+## Langkah 4 – Generate Laporan File Sistem
+
+*Script ini akan membuat laporan statistik tentang file di direktori proyek, lalu menyimpannya ke report.txt.*
+### Buat file report.sh
+```
+nano report.sh
+```
