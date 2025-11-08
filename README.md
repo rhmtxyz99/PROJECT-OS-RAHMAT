@@ -4,6 +4,6 @@ Project Based Learing 1
 
 Berikut contoh script bash untuk menampilkan pesan:
 
-```bash
+```
 #!/bin/bash
 echo "Halo Dunia!"
