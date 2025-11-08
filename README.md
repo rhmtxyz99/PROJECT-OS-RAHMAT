@@ -41,6 +41,13 @@ touch file{1..10}.txt file{11..15}.jpg file{16..18}.pdf file{19..20}.log
 ```
 echo "Log sistem contoh" > file20.log
 ```
+Penjelasan:
+
+- mkdir → membuat folder baru.
+
+- touch → membuat file kosong dengan cepat.
+
+- echo → menulis teks ke dalam file.
 
 ## LANGKAH 2 SCRIPT ORGANISASI FILE
 ### Buat Script Organisasi File di dalam direktori projek:
@@ -77,7 +84,13 @@ chmod +x organisasi_file.sh
 ```
 ./organisasi_file.sh
 ```
+Penjelasan:
 
+- find . -maxdepth 1 -type f -name "*.ext" → mencari file berdasarkan ekstensi di direktori saat ini.
+
+- -exec mv {} folder/ \; → memindahkan file hasil pencarian ke folder sesuai.
+
+- chmod +x → memberi izin eksekusi ke script.
 ## LANGKAH 3 FUNGSI PENCARIAN 
 *Karena saya sudah punya script pencarian file yang bisa mencari berdasarkan nama, ukuran, dan isi konten. Jadi Saya Langsung Buat Fungsi pencariannya.*
 
@@ -130,6 +143,13 @@ chmod +x search_file.sh
 ```
 ./search_file.sh
 ```
+Penjelasan:
+
+- find . -type f -name "*.txt" → mencari file dengan pola nama tertentu.
+
+- find . -size +1M → mencari file berukuran lebih dari 1 MB.
+
+- grep -r "teks" → mencari teks di dalam isi file secara rekursif.
 
 ## Langkah 4 – Generate Laporan File Sistem
 
@@ -138,3 +158,57 @@ chmod +x search_file.sh
 ```
 nano report.sh
 ```
+[Deskripsi gambar]
+(https://drive.google.com/file/d/1F143nEPQx7iqBQJIUdSG50mrzrXfdqIi/view?usp=sharing)
+```
+#!/bin/bash
+# Script: generate_report.sh
+# Fungsi: Membuat laporan statistik file sistem
+
+cd ~/project_file_management
+
+echo "=== LAPORAN FILE SISTEM ===" > report.txt
+echo "Tanggal: $(date)" >> report.txt
+echo "" >> report.txt
+
+echo "--- Jumlah File dan Folder ---" >> report.txt
+ls -lR | wc -l >> report.txt
+echo "" >> report.txt
+
+echo "--- Ukuran Total Folder ---" >> report.txt
+du -sh . >> report.txt
+echo "" >> report.txt
+
+echo "--- Daftar 10 File Terbesar ---" >> report.txt
+find . -type f -exec du -h {} + | sort -rh | head -10 >> report.txt
+echo "" >> report.txt
+
+echo "--- Statistik Berdasarkan Ekstensi ---" >> report.txt
+echo "TXT: $(find . -type f -name '*.txt' | wc -l)" >> report.txt
+echo "JPG: $(find . -type f -name '*.jpg' | wc -l)" >> report.txt
+echo "PDF: $(find . -type f -name '*.pdf' | wc -l)" >> report.txt
+echo "LOG: $(find . -type f -name '*.log' | wc -l)" >> report.txt
+
+echo "" >> report.txt
+echo "=== Selesai! Laporan disimpan di report.txt ==="
+```
+### Beri Hak Akses Eksekusi
+```
+chmod +x report.sh
+```
+### Eksekusi File Yang Telah Di Buat
+```
+./report.sh
+```
+*Jadi,Ketika Di jalankan Perintah (./report.sh) maka laopran akan otomatis tersimpan di file report.sh*
+### Melihat isi Laporan
+```
+cat report.sh
+```
+Penjelasan:
+
+- find . -type f -name "*.txt" → mencari file dengan pola nama tertentu.
+
+- find . -size +1M → mencari file berukuran lebih dari 1 MB.
+
+- grep -r "teks" → mencari teks di dalam isi file secara rekursif.
