@@ -7,3 +7,12 @@ Berikut contoh script bash untuk menampilkan pesan:
 
 ```
 #ubuntu@rahmat-nusi:~ mkdir Project_File_Management
+
+
+```
+Berikut contoh script bash untuk menampilkan pesan:
+![Deskripsi gambar](https://drive.google.com/file/d/1VrifpuUz2Jp4Wfr1SlaVp5pgvdoRKswu/view?usp=sharing)
+
+```
+#ubuntu@rahmat-nusi:~ cd Project_File_Management
+#ubuntu@rahmat-nusi:~/Project_File_Management$ mkdir document images archives logs
